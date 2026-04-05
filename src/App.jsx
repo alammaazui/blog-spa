@@ -20,9 +20,10 @@ const App = () => {
           <div className="col-md-10">
             <Routes>
               <Route path={"/"} element={<Home />}></Route>
+              {/* <Route path="test" element={<><h1>test comp</h1></>}></Route> */}
               <Route path={"createBlog"} element={<Create />}></Route>
-              <Route path={"editBlog"} element={<Edit />}></Route>
-              <Route path={"viewBlog"} element={<View />}></Route>
+              <Route path={"editBlog/:blogid"} element={<Edit />}></Route>
+              <Route path={"viewBlog/:blogid"} element={<View />}></Route>
             </Routes>
           </div>
         </div>

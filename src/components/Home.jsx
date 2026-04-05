@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router";
 
 const Home = () => {
+  
   const [blogData, setBlogData] = useState([]);
   const [error, setError] = useState(false);
   const [isloading, setisloading] = useState(true);
@@ -29,6 +30,7 @@ const Home = () => {
 
   return (
     <>
+  
       {isloading && <h1>Loading ...</h1>}
       {error && <h1>Error Message {error}</h1>}
       {blogData.map((blog) => (
@@ -40,12 +42,15 @@ const Home = () => {
             <h5>{blog.title}</h5>
             <h6>Written By {blog.author}</h6>
 
-            <Link className="btn btn-dark w-100 my-2" to={"viewBlog"}>
+            <Link className="btn btn-dark w-100 my-2" to={`./viewBlog/${blog.id}`}>
               Read More
             </Link>
           </div>
         </div>
       ))}
+      {
+        
+      }
     </>
   );
 };

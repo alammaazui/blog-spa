@@ -1,22 +1,16 @@
 {
   "blogs": [
     {
-      "title": "test title",
-      "description": "test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description test description ",
-      "author": "test author name",
+      "title": "a",
+      "description": "a",
+      "author": "a",
       "id": 1
     },
     {
-      "title": "new blog title",
-      "description": "new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description new blog description  ",
-      "author": "new blog author name",
+      "title": "dummy title test ",
+      "description": "dummy description test ",
+      "author": "dummy author test",
       "id": 2
-    },
-    {
-      "title": "after ui title",
-      "description": "after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc after ui desc ",
-      "author": "after ui author ",
-      "id": 3
     }
   ]
 }

@@ -1,7 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router";
-
+import { authentication } from "../context/AuthContext";
+import useAuthContext from '../context/useAuthContext'
+import { Skeleton } from "antd";
 const Home = () => {
+
+  // const {userData,setUserData} = useContext(authentication)
+
+   const {setUserData} = useAuthContext()
   
   const [blogData, setBlogData] = useState([]);
   const [error, setError] = useState(false);
@@ -25,13 +31,17 @@ const Home = () => {
     }
   };
   useEffect(() => {
-    getData();
+    setTimeout(() => {
+      getData();
+      
+    }, 3000);
   }, []);
 
   return (
     <>
-  
-      {isloading && <h1>Loading ...</h1>}
+      <button onClick={()=>{setUserData({email:"user1@ui.com" ,role:"admin" ,token:"1234##%%^62653672"})}}>Login</button>
+      {/* {isloading && <h1>Loading ...</h1>} */}
+      {isloading && <Skeleton></Skeleton>}
       {error && <h1>Error Message {error}</h1>}
       {blogData.map((blog) => (
         <div className="card my-3">

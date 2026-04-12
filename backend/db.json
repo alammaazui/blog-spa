@@ -12,5 +12,14 @@
       "author": "dummy author test",
       "id": 2
     }
+  ],
+  "users": [
+    {
+      "username": "test",
+      "email": "test@ui.com",
+      "password": "test1234",
+      "role": "guest",
+      "id": 1
+    }
   ]
 }

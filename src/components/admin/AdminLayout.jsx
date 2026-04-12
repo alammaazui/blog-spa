@@ -1,8 +1,13 @@
 import { Outlet } from "react-router";
 import Aside from "./Aside";
+import useAuthContext from "../../context/useAuthContext";
+// import { useContext } from "react";
+// import { authentication } from "../../context/AuthContext";
 
 export default function AdminLayout (){
+    // const {userData} = useContext(authentication)
 
+    const {userData, setuserData} = useAuthContext()
     return(
         <>
             <h1>Admin Layout</h1>

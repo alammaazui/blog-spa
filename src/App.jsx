@@ -10,6 +10,9 @@ import AdminLayout from "./components/admin/AdminLayout";
 import MainLayout from "./components/MainLayout";
 import Protected from "./components/Protected";
 import Unauthorized from "./components/Unauthorized";
+import Register from "./components/Register";
+import Login from "./components/Login";
+import RefHook from "./components/RefHook";
 const App = () => {
 
   const isUser = {
@@ -30,6 +33,9 @@ const App = () => {
             <Routes>
               <Route path="*" element={<h1>Path Not Found</h1>}></Route>
               <Route path="unauth" element={<Unauthorized/>}></Route>
+              <Route path='register' element ={<Register/>}  ></Route>
+              <Route path='login' element ={<Login/>}  ></Route>
+              <Route path='ref' element ={<RefHook/>}  ></Route>
               {/* guest Layout */}
               <Route path="/" element={<MainLayout/>}>
                 <Route index element={<Home />}/>
